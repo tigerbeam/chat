@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Detection</title>
+  <script>
+    window.onload = function() {
+      if (window.self !== window.top) {
+        alert("Страница открыта в iframe");
+      } else {
+        alert("Страница не в iframe");
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Проверка на iframe</h1>
+  <p>Эта страница определяет, загружена ли она внутри iframe.</p>
+</body>
+</html>
